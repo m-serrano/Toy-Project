@@ -12,7 +12,11 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories
-@ComponentScan (basePackageClasses = com.toyprojectbackend.config.AppConfig.class) 
+@ComponentScan (basePackageClasses = {
+		com.toyprojectbackend.config.AppConfig.class,
+		com.toyprojectbackend.config.SecurityConfigurer.class,
+		com.toyprojectbackend.controller.CarController.class
+})
 public class ToyProjectBackendApplication /*implements CommandLineRunner*/{
 	/*@Autowired
 	private CarRepository repository;*/
