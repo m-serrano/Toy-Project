@@ -1,10 +1,10 @@
 package com.toyprojectbackend;
 
-import com.toyprojectbackend.entity.Car;
+/*import com.toyprojectbackend.entity.Car;
 import com.toyprojectbackend.repository.CarRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.CommandLineRunner;*/
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,15 +13,15 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @SpringBootApplication
 @EnableMongoRepositories
 @ComponentScan (basePackageClasses = com.toyprojectbackend.config.AppConfig.class) 
-public class ToyProjectBackendApplication implements CommandLineRunner{
-	@Autowired
-	private CarRepository repository;
+public class ToyProjectBackendApplication /*implements CommandLineRunner*/{
+	/*@Autowired
+	private CarRepository repository;*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(ToyProjectBackendApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String ... args) throws Exception {
   
 	  repository.deleteAll();
@@ -37,6 +37,6 @@ public class ToyProjectBackendApplication implements CommandLineRunner{
 		System.out.println(customer);
 	  }
 	  System.out.println();
-	}
+	}*/
 
 }
